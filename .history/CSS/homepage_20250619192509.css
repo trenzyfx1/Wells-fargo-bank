@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0e0e0e;
+    color: white;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, red, pu);
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.balance-card .balance {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card-info {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.actions button {
+    background: #1e1e1e;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1 1 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.actions button i {
+    font-size: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background: #1e1e1e;
+    color: white;
+}
+
+.search-bar button {
+    background: #1e1e1e;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.transactions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction {
+    background: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction p {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.success {
+    color: #1dd1a1;
+    font-weight: bold;
+}
+
+.failed {
+    color: #ee5253;
+    font-weight: bold;
+}
+
+/* Add inside existing CSS */
+
+.transaction {
+    background: #1a1a1a;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-detail {
+    text-align: right;
+}
+
+.right-detail p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.see-more {
+    margin-top: 15px;
+    display: inline-block;
+    color: white;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+.label {
+    font-size: 0.75rem;
+    color: #e0e0e0;
+    margin-bottom: 2px;
+}
+
+.card-top {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.card-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: right;
+    font-size: 0.85rem;
+}
+
+.statement-btn {
+    margin-top: 10px;
+    padding: 8px;
+    background: #111;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    .dashboard {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .left-panel {
+        flex: 1.5;
+    }
+
+    .right-panel {
+        flex: 1;
+        position: sticky;
+        top: 20px;
+    }
+}

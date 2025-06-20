@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="header-image">
+            <img src="./images/skyscrapper.jpg" alt="Bank Building" />
+            <div class="red-stripe"></div>
+            <div class="logo-area">
+                <img src="./images/logo.PNG" alt="Logo" class="logo" />
+                <span class="brand">Banksite.co</span>
+            </div>
+        </div>
+
+        <div class="form-area">
+            <h2>Login</h2>
+            <p class="subtitle">Sign in to continue.</p>
+            <input type="text" id="username" placeholder="Name">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Log In</button>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
